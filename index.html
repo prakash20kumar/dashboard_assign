@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;800&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>DASHBOARD</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list" id="nav-btn"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" id="navbar-nav">
+            <a class="nav-link isActive" aria-current="page" href="#">Dashboard</a>
+            <a class="nav-link" href="#">My Tracks</a>
+            <a class="nav-link" href="#">Integrations</a>
+            <a class="nav-link" href="#">Help</a>
+            <div id="user">
+              <img src="./img/user.png" alt="user" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container">
+      <div class="row" id="main-page">
+        <div class="col-lg-5">
+          <h1 id="heading_main">WELCOME<br /><span id="heading_secondary">TO SONORITY</span></h1>
+          <p id="heading_content">
+            Sonority turns your text into a high-quality, human-sounding voiceover, gives you 1000s of unique audio
+            tracks, and converts your audio content into fully-customizable videos–all on complete autopilot.
+          </p>
+          <button id="home_btn">
+            <i class="bi bi-play-fill"></i>
+            <span>Demo Video</span>
+          </button>
+        </div>
+
+        <div class="col-lg-6" id="home_content-main">
+          <div class="home_content">
+            <img src="./img/voice.png" alt="voice" />
+            Voice Track
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="home_content">
+            <img src="./img/music.png" alt="music" />
+            Music Track
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="home_content">
+            <img src="./img/audio.png" alt="audio" />
+            Audio Track
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="home_content">
+            <img src="./img/video.png" alt="wave" />
+            Wave Track
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="container" id="track-main">
+        <!-- Track heading -->
+        <div class="row" id="track">
+          <div class="col">
+            <h1 id="track_heading">My <span>Tracks</span></h1>
+          </div>
+          <div class="col" id="track-view">
+            <h5>
+              VIEW ALL
+              <i class="bi bi-arrow-right-circle"></i>
+            </h5>
+          </div>
+        </div>
+
+        <!-- Track Section -->
+        <div class="row" id="track-section">
+          <div class="col-lg-3 col-md-5 col-sm-11 track-box" id="voice-track">
+            <div>
+              <p class="track-title" id="voice-title">Voice Track</p>
+            </div>
+
+            <!-- Track Controls -->
+            <div class="track-controls">
+              <i class="bi bi-play-circle"></i>
+              <div>
+                <div class="track-date">April 28, 2021 5:41:7</div>
+                <div class="track-no">Track 001</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5 track-box" id="music-track">
+            <div>
+              <p class="track-title" id="music-title">Music Track</p>
+            </div>
+
+            <!-- Track Controls -->
+            <div class="track-controls">
+              <i class="bi bi-play-circle"> </i>
+              <div>
+                <div class="track-date">April 28, 2021 5:41:7</div>
+                <div class="track-no">Track 002</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5 track-box" id="audio-track">
+            <div>
+              <p class="track-title" id="audio-title">Audio Track</p>
+            </div>
+
+            <!-- Track Controls -->
+            <div class="track-controls">
+              <i class="bi bi-play-circle"></i>
+              <div>
+                <div class="track-date">April 28, 2021 5:41:7</div>
+                <div class="track-no">Track 003</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-5 track-box" id="wave-track">
+            <div>
+              <p class="track-title" id="wave-title">Wave Track</p>
+            </div>
+
+            <!-- Track Controls -->
+            <div class="track-controls">
+              <i class="bi bi-play-circle"> </i>
+              <div>
+                <div class="track-date">April 28, 2021 5:41:7</div>
+                <div class="track-no">Track 004</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard Details 1-->
+      <section class="container-fluid track_desc-main">
+        <img src="./img/shadow.png" alt="" class="shadow shadow-right" />
+        <div class="row">
+          <div class="col-6 track_desc-content margin_left">
+            <h4>Say goodbye to fake-sounding AI voiceovers</h4>
+            <h1>Turn your text into a natural & authentic voiceover</h1>
+            <p>
+              Forget about spending time and money just to get a voiceover that captivates your viewers. Simply choose
+              from 15 diverse voices and let our cutting-edge AI convert your text into a human-sounding voiceover in
+              under 60 seconds.
+            </p>
+          </div>
+          <div class="col side_img justify-content-end">
+            <img src="./img/voiceover.png" alt="voiceover" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard Details 2-->
+      <section class="container-fluid track_desc-main">
+        <img src="./img/shadow.png" alt="" class="shadow shadow-left" />
+        <div class="row flex-row-reverse">
+          <div class="col-6 track_desc-content margin_right">
+            <h4>Get 1000s of music to choose from</h4>
+            <h1>Stand out with unique music for your content</h1>
+            <p>
+              Level up from generic music that everybody else is using to unique AI-generated tracks that elevate your
+              content from the rest. Set the perfect mood with unlimited access to a rich library of music that has just
+              what you need.
+            </p>
+          </div>
+          <div class="col side_img">
+            <img src="./img/uniquemusic.png" alt="voiceover" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard Details 3-->
+      <section class="container-fluid track_desc-main">
+        <img src="./img/shadow.png" alt="" class="shadow shadow-right" />
+        <div class="row">
+          <div class="col-6 track_desc-content margin_left">
+            <h4>Sit back and let our AI do the work for you</h4>
+            <h1>Produce a high-quality Audio-Track in 1 click</h1>
+            <p>
+              Why bother tinkering with complicated audio-editing software when you can just let our AI automate this
+              for you? All you need is a single click to merge all your voiceovers and music to get that polished,
+              finalized content ready for broadcast.
+            </p>
+          </div>
+          <div class="col side_img justify-content-end">
+            <img src="./img/audio-pc.png" alt="voiceover" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard Details 4-->
+      <section class="container-fluid track_desc-main">
+        <img src="./img/shadow.png" alt="" class="shadow shadow-left" />
+        <div class="row flex-row-reverse">
+          <div class="col-6 track_desc-content margin_right">
+            <h4>Effortlessly repurpose your audio</h4>
+            <h1>Convert your audio into a WaveVideo seamlessly</h1>
+            <p>
+              Double your views and engagement with half the effort. Transform your audio into a fully-customizable
+              WaveVideo that is fully-optimized for your social media, business presentation, website use, and more.
+            </p>
+          </div>
+          <div class="col side_img">
+            <img src="./img/wave-pc.png" alt="voiceover" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
